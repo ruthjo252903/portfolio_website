@@ -3,21 +3,22 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>About Me - Ruth's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>About Me | Ruth's Portfolio</title>
     <meta name="description"
-          content="Learn more about Ruth, her interests, education and skills.">
+        content="Learn more about Ruth, her interests, education and technology skills.">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-          <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
+    <header class="page-header">
         <h1>About Me</h1>
+        <button id="themeToggle" type="button" aria-label="Toggle dark mode">
+            🌙 Dark Mode
+        </button>
     </header>
 
     <nav aria-label="Main navigation">
@@ -29,24 +30,36 @@
 
     <main>
 
-        <section>
-            <h2>Who I Am</h2>
+        <section class="about-grid">
 
-            <p>
-                I am a student interested in technology,
-                programming and learning new skills.
-            </p>
+            <div>
+                <h2>Who I Am</h2>
+                <p>
+                    I am a student passionate about technology and continuous
+                    learning. I enjoy exploring programming and developing
+                    useful web projects.
+                </p>
+            </div>
+
+            <div>
+                <h2>My Interests</h2>
+
+                <ul class="interest-list">
+                    <li>Web Development</li>
+                    <li>Artificial Intelligence</li>
+                    <li>Programming</li>
+                    <li>Data Analytics</li>
+                </ul>
+            </div>
+
         </section>
 
         <section>
-            <h2>My Interests</h2>
-
-            <ul>
-                <li>Web Development</li>
-                <li>Programming</li>
-                <li>Artificial Intelligence</li>
-                <li>Data Analytics</li>
-            </ul>
+            <h2>My Learning Journey</h2>
+            <p>
+                I am continuously improving my technical skills by working
+                on practical projects and learning modern technologies.
+            </p>
         </section>
 
     </main>

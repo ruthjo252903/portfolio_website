@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Ruth - Portfolio</title>
-
+    <title>Ruth's Portfolio | Home</title>
     <meta name="description"
-          content="Personal portfolio website showcasing my skills, projects and contact information.">
+        content="Welcome to Ruth's portfolio showcasing web development, programming and technology projects.">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-          <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Ruth's Portfolio</h1>
+    <header class="hero">
+        <div class="hero-content">
+            <p class="tagline">Welcome to my portfolio</p>
+            <h1>Hi, I'm Ruth 👋</h1>
+            <p>Student | Web Development | Technology Enthusiast</p>
+
+            <button id="themeToggle" type="button" aria-label="Toggle dark mode">
+                🌙 Dark Mode
+            </button>
+        </div>
     </header>
 
-    <nav>
+    <nav aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="projects.html">Projects</a>
@@ -29,88 +35,41 @@
 
     <main>
 
-    <section id="home">
-        <h2>Welcome to My Portfolio</h2>
+        <section class="intro">
+            <h2>Welcome</h2>
+            <p>
+                I'm a student interested in programming, web development,
+                artificial intelligence and data analytics.
+            </p>
+        </section>
 
-        <p>
-            Hi, I'm Ruth, a student interested in technology
-            and developing my skills.
-        </p>
+        <section class="skills-section">
+            <h2>My Skills</h2>
 
-        <a href="projects.html">View My Projects</a>
-    </section>
-    <main>
+            <div class="skills-grid">
+                <article class="skill-card">
+                    <h3>HTML</h3>
+                    <p>Creating semantic and accessible web pages.</p>
+                </article>
 
-    
+                <article class="skill-card">
+                    <h3>CSS</h3>
+                    <p>Building responsive and modern website designs.</p>
+                </article>
 
-    <section id="about">
-        <h2>About Me</h2>
+                <article class="skill-card">
+                    <h3>JavaScript</h3>
+                    <p>Adding interactive features to websites.</p>
+                </article>
 
-        <p>
-            I am a student passionate about technology,
-            programming and learning new skills.
-        </p>
-    </section>
+                <article class="skill-card">
+                    <h3>Python</h3>
+                    <p>Learning programming and data-related concepts.</p>
+                </article>
+            </div>
+        </section>
 
-    <section id="skills">
-        <h2>My Skills</h2>
-
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>C Programming</li>
-            <li>C++</li>
-            <li>Python</li>
-            <li>Web Development</li>
-        </ul>
-    </section>
-    <section id="projects">
-    <h2>My Projects</h2>
-
-    <article>
-        <h3>Birthday Website</h3>
-        <p>
-            A simple interactive website created using HTML, CSS and JavaScript.
-        </p>
-    </article>
-
-    <article>
-        <h3>AI Integrated Safety System</h3>
-        <p>
-            A smart safety project designed to detect and prevent
-            different household hazards.
-        </p>
-    </article>
-
-</section>
-<section id="contact">
-    <h2>Contact Me</h2>
-
-    <form action="#" method="post">
-
-        <div>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-        </div>
-
-        <div>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-
-        <div>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
-
-        <button type="submit">Send Message</button>
-
-    </form>
-</section>
-
-</main>
-
-</main>
+    </main>
 
     <footer>
         <p>&copy; <span id="year"></span> Ruth. All rights reserved.</p>
@@ -119,4 +78,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>

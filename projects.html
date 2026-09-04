@@ -3,21 +3,22 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>About Me - Ruth's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Projects | Ruth's Portfolio</title>
     <meta name="description"
-          content="Learn more about Ruth, her interests, education and skills.">
+        content="Explore Ruth's web development and technology projects.">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-          <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>About Me</h1>
+    <header class="page-header">
+        <h1>My Projects</h1>
+        <button id="themeToggle" type="button" aria-label="Toggle dark mode">
+            🌙 Dark Mode
+        </button>
     </header>
 
     <nav aria-label="Main navigation">
@@ -30,29 +31,45 @@
     <main>
 
         <section>
-            <h2>Who I Am</h2>
+            <h2>Featured Projects</h2>
 
-            <p>
-                I am a student interested in technology,
-                programming and learning new skills.
-            </p>
-        </section>
+            <div class="projects-grid">
 
-        <section>
-            <h2>My Interests</h2>
+                <article class="project-card">
+                    <div class="project-icon">🌐</div>
+                    <h3>Birthday Website</h3>
+                    <p>
+                        An interactive website created using HTML,
+                        CSS and JavaScript.
+                    </p>
+                </article>
 
-            <ul>
-                <li>Web Development</li>
-                <li>Programming</li>
-                <li>Artificial Intelligence</li>
-                <li>Data Analytics</li>
-            </ul>
+                <article class="project-card">
+                    <div class="project-icon">🤖</div>
+                    <h3>AI Integrated Safety System</h3>
+                    <p>
+                        A smart safety concept designed to detect
+                        different household hazards.
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon">💻</div>
+                    <h3>Portfolio Website</h3>
+                    <p>
+                        A responsive multi-page portfolio built using
+                        modern HTML5 and CSS3 techniques.
+                    </p>
+                </article>
+
+            </div>
+
         </section>
 
     </main>
 
     <footer>
-       <p>&copy; <span id="year"></span>Ruth. All rights reserved.</p>
+        <p>&copy; <span id="year"></span> Ruth. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
